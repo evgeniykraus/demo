@@ -1,0 +1,130 @@
+:root {
+    --base_bg_color: #ffffff;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Gilroy, serif;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1180px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5vw;
+    border-radius: 75px;
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    background-color: var(--base_bg_color);
+    align-items: center;
+}
+
+.header-container > *:last-child {
+    margin-left: auto;
+}
+
+.link-logo:hover {
+    animation: shake 0.5s ease;
+}
+
+.header-list, .header-button-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vw;
+}
+
+.header-list-item-link, .header-register-link {
+    color: #22253b;
+    font-size: 12px;
+}
+
+.header-list-item-link:hover, .header-register-link:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-radius: 34px;
+    background: #38bff2;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 1vw 4vh;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    text-shadow: black;
+    color: #22253b;
+    border: 1px solid #22253b;
+}
+
+.btn:active {
+    transform: scale(0.95);
+    color: rgba(34, 37, 59, 0.3);
+    border: 1px solid #22253b;
+}
+
+.video-container {
+    /*position: relative;*/
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.video-container-video {
+    /*position: absolute;*/
+    width: 50%;
+    height: auto;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    25% {
+        transform: rotate(-10deg) scale(1.1);
+    }
+    50% {
+        transform: rotate(10deg) scale(1.1);
+    }
+    75% {
+        transform: rotate(-5deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .btn {
+        padding: 20px 40px;
+    }
+}
