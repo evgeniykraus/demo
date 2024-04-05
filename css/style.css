@@ -1,5 +1,7 @@
 :root {
-    --base_bg_color: #ffffff;
+    --main-bg-color: #ffffff;
+    --main-brand-color: #38bff2;
+    --accent-color: #ef5425;
 }
 
 html {
@@ -32,6 +34,20 @@ p {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 1200px;
+
+}
+
+.section-title {
+    color: #22253b;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 46px;
+    text-align: center;
+}
+
+.content-box {
+    padding: 71px 20px 0;
+    border-radius: 48px;
 }
 
 .header-container {
@@ -39,10 +55,9 @@ p {
     flex-direction: row;
     justify-content: flex-start;
     gap: 5vw;
-    border-radius: 75px;
     backdrop-filter: blur(15px);
     padding: 20px;
-    background-color: var(--base_bg_color);
+    background-color: var(--main-bg-color);
     align-items: center;
 }
 
@@ -67,14 +82,14 @@ p {
 }
 
 .header-list-item-link:hover, .header-register-link:hover {
-    color: #ef5425;
+    color: var(--accent-color);
 }
 
 .btn {
     border: none;
     cursor: pointer;
     border-radius: 34px;
-    background: #38bff2;
+    background: var(--main-brand-color);
     color: #ffffff;
     font-size: 12px;
     padding: 1vw 4vh;
@@ -84,7 +99,7 @@ p {
 /*Кнопки*/
 
 .btn:hover {
-    background: #ef5425;
+    background: var(--accent-color);
 }
 
 .btn:active {
@@ -111,7 +126,7 @@ p {
 }
 
 .hero-container-btn {
-    background: #ef5425;
+    background: var(--accent-color);
     min-width: 320px;
     min-height: 70px;
     font-size: 20px;
@@ -120,19 +135,13 @@ p {
 }
 
 .hero-container-btn:hover {
-    background: #38bff2;
+    background: var(--main-brand-color);
 }
 
 /*Контейнеры*/
 
 .hero {
-    background: linear-gradient(0.25turn, var(--base_bg_color), #f6f8f9, #eff5f7);
-}
-
-.section-title {
-    font-size: 46px;
-    font-weight: 500;
-    line-height: 46px;
+    background: linear-gradient(0.25turn, var(--main-bg-color), #f6f8f9, #eff5f7);
 }
 
 .hero-container {
@@ -144,12 +153,12 @@ p {
     gap: 10px;
     background-image: url("../img/hero_img.png"), radial-gradient(
             circle at calc(90% - 165px),
-            var(--base_bg_color) 0, var(--base_bg_color) 200px,
+            var(--main-bg-color) 0, var(--main-bg-color) 200px,
             #edf4f7 200px, #f6fafa 290px,
             #eff5f7 291px, #f6f8fa 450px,
             #ecf4f5 451px, #f6f8f9 700px,
             #eff3f5 701px, #faf9fc 80%,
-            var(--base_bg_color) 50%, var(--base_bg_color) 100%
+            var(--main-bg-color) 50%, var(--main-bg-color) 100%
     );
     background-repeat: no-repeat;
     background-position: 90% 40%;
@@ -158,6 +167,12 @@ p {
 
 .hero-content {
     max-width: 50%;
+}
+
+.hero-content-title {
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 46px;
 }
 
 .hero-content-title b {
@@ -174,9 +189,165 @@ p {
     color: #22253b;
     font-size: 16px;
     line-height: 23px;
-    border-top: 1px solid #dedede;;
+    border-top: 1px solid #dedede;
+    padding-top: 15px;
     margin-bottom: 20px;
 }
+
+.technologies {
+
+}
+
+.technologies-container {
+    background-color: #f9f8fd;
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    gap: 70px;
+    border-radius: 48px;
+    align-items: center;
+}
+
+.wrapper {
+    padding-left: 120px;
+    /*width: 50%;*/
+}
+
+.technologies-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.technologies-content-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 80%;
+}
+
+.technologies-content-list-item {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 44px;
+    /*background: #5096ff;*/
+    padding: 0 25px;
+}
+
+.technologies-content-list-item:nth-child(1) {
+    background: #5096ff;
+}
+
+.technologies-content-list-item:nth-child(2) {
+    background: #ffb359;
+}
+
+.technologies-content-list-item:nth-child(3) {
+    background: #ff6f50;
+}
+
+.technologies-content-list-item:nth-child(4) {
+    background: #4bd071;
+}
+
+.technologies-content-list-item:nth-child(5) {
+    background: #50c0ff;
+}
+
+.technologies-content-list-item:nth-child(6) {
+    background: #4b77b9;
+}
+
+.technologies-content-list-item:nth-child(7) {
+    background: #af93ff;
+}
+
+.technologies-content-text {
+    width: 60%;
+    color: #22253b;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.about_learning-skills_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.about_learning-skills_list-item {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 250px;
+    border-radius: 30px;
+    background-color: #eaf2f5;
+    box-shadow: 6px 3px 6px #a1b5bd;
+}
+
+.about_learning-skills_list-item:before{
+    content: "";
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about_learning-skills_list-item:nth-child(1):before {
+    background-image: url("../img/cards/card_1.png");
+}
+.about_learning-skills_list-item:nth-child(2):before {
+    background-image: url("../img/cards/card_2.png");
+}
+.about_learning-skills_list-item:nth-child(3):before {
+    background-image: url("../img/cards/card_3.png");
+}
+.about_learning-skills_list-item:nth-child(4):before {
+    background-image: url("../img/cards/card_4.png");
+}
+.about_learning-skills_list-item:nth-child(5):before {
+    background-image: url("../img/cards/card_5.png");
+}
+.about_learning-skills_list-item:nth-child(6):before {
+    background-image: url("../img/cards/card_6.png");
+}
+.about_learning-skills_list-item:nth-child(7):before {
+    background-image: url("../img/cards/card_7.png");
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 0 auto;
+    width: 70%;
+    height: 30%;
+}
+
+.about_learning-skills_list-item-title{
+    margin: 0;
+    color: #22253b;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    text-align: center;
+}
+.about_learning-skills_list-item-text{
+    color: #22253b;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+
 
 .video-container {
     /*position: relative;*/
