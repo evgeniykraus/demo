@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <script defer src="js/script.js"></script>
+    <title>Школа программирования YtYt</title>
 </head>
 <body>
     <header class="header">
@@ -31,20 +32,28 @@
                         </a>
                     </li>
                     <li class="header-list-item">
-                        <a class="nav_item" href="#">
+                        <a class="nav_item" href="#contacts">
                             Контакты
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a class="nav_item" href="register.html" target="_blank">
+                            Регистрация
                         </a>
                     </li>
                 </ul>
             </nav>
             <div class="header-button-group">
-                <a class="header-register-link" href="#">
+                <a class="nav_item" href="register.html" target="_blank">
                     Регистрация
                 </a>
                 <button class="btn btn-sign_in">
                     <span class="btn-ico btn-sign_in-btn-ico"></span>
                     <span>Войти</span>
                 </button>
+            </div>
+            <div class="nav-burger">
+                <span></span>
             </div>
         </div>
     </header>
@@ -53,7 +62,7 @@
 
         <section class="hero" id="hero">
             <div class="container hero-container">
-                <div class="hero-content content-box">
+                <div class="hero-content">
                     <h1 class="hero-content-title">
                         Школа <span>{</span><b>программирования</b><span>}</span> для тех,
                         кому нужны реальные навыки, а&nbsp;не&nbsp;просто сертификат
@@ -72,11 +81,11 @@
 
         <section class="technologies" id="technologies">
             <div class="container">
-                <h2 class="section-title technologies-title">
+                <h2 class="section-title">
                     Какие технологии вы&nbsp;изучите:
                 </h2>
-                <div class="technologies-container">
-                    <img class="wrapper" src="img/student.png" alt="student">
+                <div class="container technologies-container">
+                    <img class="technologies-img" src="img/student.png" alt="student">
                     <div class="technologies-content">
                         <ul class="technologies-content-list">
                             <li class="technologies-content-list-item">
@@ -101,9 +110,8 @@
                                 Git
                             </li>
                         </ul>
-                        <p class="technologies-content-text">
-                            Это необходимый минимум для современного backend-разработчика
-                        </p>
+                        <p class="technologies-content-text">Это необходимый минимум для современного
+                            backend-разработчика</p>
                     </div>
                 </div>
             </div>
@@ -204,11 +212,9 @@
                     программированию. На&nbsp;ней вы&nbsp;можете не&nbsp;только изучать теорию, но&nbsp;и&nbsp;запускать
                     готовые примеры и&nbsp;даже писать свой собственный код.
                 </p>
-                <div class="video_container">
-                    <video class="video" controls preload muted>
-                        <source src="videos/Широкий%20Путин%20Идёт.%20Hd%201080Р.mp4" type="video/mp4">
-                    </video>
-                </div>
+                <video class="video" controls preload muted>
+                    <source src="videos/Широкий%20Путин%20Идёт.%20Hd%201080Р.mp4" type="video/mp4">
+                </video>
 
                 <ol class="learning_process-list">
                     <li class="learning_process-list-item">
@@ -426,39 +432,36 @@
                         </li>
                     </ul>
                 </div>
-
-                <nav class="footer-nav">
-                    <ul class="footer-list header-list">
-                        <li class="footer-list-item">
-                            <a class="nav_item" href="#">
-                                Чему вы научитесь
-                            </a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a class="nav_item" href="#">
-                                Процесс обучения
-                            </a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a class="nav_item" href="#">
-                                Стоимость
-                            </a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a class="nav_item" href="#">
-                                Контакты
-                            </a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a class="nav_item" href="#">
-                                Регистрация
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                <ul class="footer-list header-list">
+                    <li class="footer-list-item">
+                        <a class="nav_item" href="#technologies">
+                            Чему вы научитесь
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a class="nav_item" href="#learning_process">
+                            Процесс обучения
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a class="nav_item" href="#price">
+                            Стоимость
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a class="nav_item" href="#contacts">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a class="nav_item" href="register.html" target="_blank">
+                            Регистрация
+                        </a>
+                    </li>
+                </ul>
 
                 <div class="company_info">
-                    <div class="company_info-contact_details">
+                    <div class="company_info-contact_details" id="contacts">
                         <a class="phone" href="tel:84993489396">
                             +7 (499) 348 93 96
                         </a>
@@ -474,7 +477,7 @@
                             <label>ИНН: </label> 745216229809
                         </li>
                         <li class="company_info-list-item">
-                            <label>ОГРНИП: </label> 315745200001358
+                            <label>ОГРН: </label> 315745200001358
                         </li>
                     </ul>
                 </div>
@@ -484,12 +487,12 @@
                     &copy; 2024 ytyt — Все права защищены
                 </li>
                 <li>
-                    <a class="agreements-link" href="#">
+                    <a class="nav_item" href="#">
                         Пользовательское соглашение
                     </a>
                 </li>
                 <li>
-                    <a class="agreements-link" href="#">
+                    <a class="nav_item" href="#">
                         Политика конфиденциальности
                     </a>
                 </li>

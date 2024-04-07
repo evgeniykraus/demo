@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/register.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a class="link-logo" href="index.html">
+                <img class="header-logo" src="img/header_logo.svg" alt="logo">
+            </a>
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-list-item">
+                        <a class="nav_item" href="index.html#technologies">
+                            Чему вы научитесь
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a class="nav_item" href="index.html#learning_process">
+                            Процесс обучения
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a class="nav_item" href="index.html#price">
+                            Стоимость
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a class="nav_item" href="#contacts">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="header-list-item"></li>
+                </ul>
+            </nav>
+            <div class="header-button-group">
+                <button class="btn btn-sign_in">
+                    <span class="btn-ico btn-sign_in-btn-ico"></span>
+                    <span>Войти</span>
+                </button>
+            </div>
+            <div class="nav-burger">
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container mt-3">
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <div class="row jumbotron box8">
+                <div class="col-sm-12 mx-t3 mb-4">
+                    <h2 class="text-center text-info">Регистрация</h2>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" class="form-control" name="fname" id="name" placeholder="Введите имя" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="lname">Фамилия</label>
+                    <input type="text" class="form-control" name="lname" id="lname" placeholder="Введите фамилию"
+                           required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Введите email"
+                           required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="address">Адрес</label>
+                    <input class="form-control" name="address" id="address"
+                           placeholder="Введите адрес" required>
+                </div>
+
+                <div class="col-sm-6 form-group">
+                    <label for="country">Страна</label>
+                    <select class="form-control custom-select browser-default" name="country" id="country">
+                        <option value="Russian Federation">Россия</option>
+                        <option value="North Korea">Северная Корея</option>
+                        <option value="Zimbabwe">Зимбабве</option>
+                    </select>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="Date">Дата рождения</label>
+                    <input type="Date" name="dob" class="form-control" id="Date" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="sex">Пол</label>
+                    <select class="form-control browser-default custom-select" id="sex" name="sex">
+                        <option value="male">Мужчина</option>
+                        <option value="female">Женщина</option>
+                        <option value="trans">Трансформер</option>
+                        <option value="unspecified">Неопределен</option>
+                        <option value="Game Start">🎮</option>
+                    </select>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="tel">Телефон</label>
+                    <input type="tel" name="phone" class="form-control" id="tel" placeholder="Введите номер телефона"
+                           required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="pass">Пароль</label>
+                    <input type="Password" name="password" class="form-control" id="pass" placeholder="Введите пароль"
+                           required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="pass2">Подтвердите пароль</label>
+                    <input type="Password" name="cnf-password" class="form-control" id="pass2"
+                           placeholder="Введите пароль повторно" required>
+                </div>
+
+                <div class="col-sm-12">
+                <div class="checkbox-wrapper-12">
+                    <div class="cbx form-check d-inline">
+                        <input id="cbx-12" type="checkbox" required>
+                        <label for="cbx-12">Я ознакомлен со всеми условиями</label>
+                        <svg width="15" height="14" viewbox="0 0 15 14" fill="none">
+                            <path d="M2 8.36364L6.23077 12L13 2"></path>
+                        </svg>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <filter id="goo-12">
+                                <fegaussianblur in="SourceGraphic" stddeviation="4" result="blur"></fegaussianblur>
+                                <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" result="goo-12"></fecolormatrix>
+                                <feblend in="SourceGraphic" in2="goo-12"></feblend>
+                            </filter>
+                        </defs>
+                    </svg>
+                </div>
+                </div>
+
+                <div class="col-sm-12 form-group mb-0">
+                    <button class="btn">Зарегистрироваться</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-content">
+                <div class="links">
+                    <div class="links-logo_group">
+                        <a class="link-logo" href="index.html">
+                            <img class="footer-logo" src="img/footer_logo.svg" alt="logo">
+                        </a>
+                        <p class="link-logo-descr">Школа программирования</p>
+                    </div>
+                    <ul class="social_media">
+                        <li>
+                            <a href="#">
+                                <img class="social_media_link_img" src="img/social_media/instagram.svg" alt="link">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="social_media_link_img" src="img/social_media/vk.svg" alt="link">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="social_media_link_img" src="img/social_media/facebook.svg" alt="link">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="social_media_link_img" src="img/social_media/youtube.svg" alt="link">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="footer-list header-list">
+                    <li class="footer-list-item">
+                        <a class="nav_item" href="index.html#technologies">
+                            Чему вы научитесь
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a class="nav_item" href="index.html#learning_process">
+                            Процесс обучения
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a class="nav_item" href="index.html#price">
+                            Стоимость
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a class="nav_item" href="#contacts">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="company_info">
+                    <div class="company_info-contact_details" id="contacts">
+                        <a class="phone" href="tel:84993489396">
+                            +7 (499) 348 93 96
+                        </a>
+                        <a class="email" href="mailto:info@ytyt.ru">
+                            info@ytyt.ru
+                        </a>
+                    </div>
+                    <ul class="company_info-list">
+                        <li class="company_info-list-item">
+                            <label>ИП: </label> Умаров Т.А.
+                        </li>
+                        <li class="company_info-list-item">
+                            <label>ИНН: </label> 745216229809
+                        </li>
+                        <li class="company_info-list-item">
+                            <label>ОГРН: </label> 315745200001358
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="agreements">
+                <li>
+                    &copy; 2024 ytyt — Все права защищены
+                </li>
+                <li>
+                    <a class="nav_item" href="#">
+                        Пользовательское соглашение
+                    </a>
+                </li>
+                <li>
+                    <a class="nav_item" href="#">
+                        Политика конфиденциальности
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

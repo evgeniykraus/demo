@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+
+html {
+    background: #6c6c6c;
+    font-family: "Press Start 2P", monospace;
+    font-size: 50%;
+}
+
+body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: radial-gradient(white, gray);
+    padding: 20px;
+}
+
+.game-container {
+    border: #564e4e solid 20px;
+    background: #564e4e;
+    border-radius: 20px;
+}
+
+::-moz-selection {
+    background-color: #70a4b2;
+    color: #352879;
+}
+
+::selection {
+    background-color: #70a4b2;
+    color: #352879;
+}
+
+div {
+    text-align: center;
+    background: #fff;
+    color: #000;
+    font-size: 2em;
+    line-height: 1.25;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    text-transform: uppercase;
+}
+
+.border-step {
+    border-style: solid;
+    border-width: 0.125em 0;
+    box-shadow: -0.375em 0 0 -0.125em, 0.375em 0 0 -0.125em;
+    margin: 0 0.5em;
+    padding: 0.5em 0.125em;
+    position: relative;
+    z-index: 1;
+}
+
+.border-step:before {
+    background-color: inherit;
+    border: inherit;
+    border-width: 0 0.125em;
+    bottom: 0.375em;
+    content: "";
+    left: -0.5em;
+    pointer-events: none;
+    position: absolute;
+    top: 0.375em;
+    right: -0.5em;
+    z-index: -1;
+}
+
+.border-step:after {
+    background-color: inherit;
+    border: inherit;
+    border-width: 0 0.125em;
+    bottom: 0.125em;
+    content: "";
+    left: -0.375em;
+    position: absolute;
+    top: 0.125em;
+    right: -0.375em;
+    z-index: -2;
+}
