@@ -1,7 +1,7 @@
 import * as PIXI from "./pixi.mjs";
 
 if (!localStorage.getItem('allow')) {
-    throw new Error('access denied');
+    window.location.href = '403.html';
 }
 
 const SCREEN_WIDTH = 384;
